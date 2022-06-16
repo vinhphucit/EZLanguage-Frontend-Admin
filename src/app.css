@@ -1,0 +1,21 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input {
+    @apply block px-3 py-1.5 text-base w-full mt-1 border border-solid font-normal    text-gray-700    bg-white bg-clip-padding    border-gray-300    rounded    transition    ease-in-out    m-0
+}
+input:focus {
+    @apply text-gray-700 bg-white border-blue-600 outline-none
+}
+input:disabled {
+    @apply inline-block mb-2 text-gray-700
+}
+button.normal {
+    @apply block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700
+}
+a.auth {
+    @apply text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline
+}
